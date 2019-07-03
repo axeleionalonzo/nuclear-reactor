@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
+import Links from './Links'
 
 class Tools extends Component {
   render () {
-    // links
-    const tools = {
+    const links = {
       pat: {
         name: 'PAT',
         link: 'http://127.0.0.3/fah.php?redir=5062&email=boyd@enspark.com&key=EB23ou0ngj'
@@ -18,16 +18,10 @@ class Tools extends Component {
         link: 'http://127.0.0.3/fah.php?redir=5092&email=boyd@enspark.com&key=EB23ou0ngj&create=newset'
       }
     }
-    
     return (
       <div className="container">
         <div className="row">
-          <div className="col-sm">
-            <a className="btn btn-outline-primary" href={tools.pat.link} role="button">{tools.pat.name}</a>
-            <a className="btn btn-outline-success" href={tools.hpj.link} role="button">{tools.hpj.name}</a>
-            <a className="btn btn-outline-danger" href={tools.scorecard.link} role="button">{tools.scorecard.name}</a>
-            <a className="btn btn-outline-success" href={tools.createHPJ.link} role="button">{tools.createHPJ.name}</a>
-          </div>
+          <Links links = { links } />
         </div>
       </div>
     )

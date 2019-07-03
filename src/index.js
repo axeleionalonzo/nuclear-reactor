@@ -3,8 +3,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 // modules
-import Title from './Title'
-import Tools from './tools/Tools'
+import Title from './app/Title'
+import Tools from './app/tools/Tools'
 
 // styles
 import './css/custom.scss'
